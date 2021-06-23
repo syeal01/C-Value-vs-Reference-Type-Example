@@ -14,6 +14,9 @@ namespace valueAndReferenceTypes
             var carClassObject1 = new CarClass();
             var carClassObject2 = new CarClass();
 
+            // Struct Object1 initial Make is Honda.
+            // After assignment to Object2, remains same. (Value)
+
             carStructObject1.Make = "Honda";
             Console.WriteLine($"  carStructObject1.Make: {carStructObject1.Make}");
             carStructObject2 = carStructObject1;
@@ -22,6 +25,10 @@ namespace valueAndReferenceTypes
             Console.WriteLine($"=>carStructObject1.Make: {carStructObject2.Make}");
 
             Console.WriteLine("----------------------------");
+
+            // Class Object1 initial Make is Honda.
+            // After assignment to Object2, Make is what Object2 Make. (Reference)
+
             carClassObject1.Make = "Honda";
             Console.WriteLine($"  carStructObject1.Make: {carClassObject1.Make}");
             carClassObject2 = carClassObject1;
